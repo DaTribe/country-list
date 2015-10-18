@@ -1,4 +1,4 @@
-CREATE TABLE country (id NVARCHAR(2) NOT NULL, name NVARCHAR(64) NOT NULL, PRIMARY KEY (id));
+CREATE TABLE Country (Id CHAR(2) NOT NULL, Created DateTime2 NOT NULL DEFAULT (Getdate()), Name NVARCHAR(64) NOT NULL, PRIMARY KEY (Id));
 
 INSERT INTO [country] ([id], [name]) VALUES ('AF', 'Afghanistan');
 INSERT INTO [country] ([id], [name]) VALUES ('AL', 'Albania');
